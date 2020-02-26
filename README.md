@@ -55,7 +55,7 @@ AWA2 dataset 참조 : [https://cvml.ist.ac.at/AwA2/](https://cvml.ist.ac.at/AwA2
 
 1. Embedding
 
-    $$f_φ(x_i), f_φ(x_j)$$
+    ![equ1](http://latex.codecogs.com/gif.latex?%24%24f_%5Cvarphi%20%28x_i%29%2C%20f_%5Cvarphi%28x_j%29%24%24)
 
     $$f_φ : \text{Embedding module}\newline x_i, x_j : \text{support and query image}$$  
 
