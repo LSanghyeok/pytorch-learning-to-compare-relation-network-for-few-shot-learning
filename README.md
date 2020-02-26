@@ -98,3 +98,20 @@ AWA2 dataset 참조 : [https://cvml.ist.ac.at/AwA2/](https://cvml.ist.ac.at/AwA2
 $$g_\phi(C(f_{φ1}(x_i),\ f_{φ2}(x_j)))$$
 
 기존의 few-shot learning과 거의 유사하나, support set의 data는 이제 image가 아닌 attribute를 나타낸 vector이므로 query set의 image를 embedding하는 network와 다른 network를 통하여 embedding을 진행한다. (attribute는 FC network 사용, 이미지는 CNN 사용)
+
+# References
+
+Papers:
+
+- [http://openaccess.thecvf.com/content_cvpr_2018/papers/Sung_Learning_to_Compare_CVPR_2018_paper.pdf](http://openaccess.thecvf.com/content_cvpr_2018/papers/Sung_Learning_to_Compare_CVPR_2018_paper.pdf)
+
+Code:
+
+- [https://github.com/floodsung/LearningToCompare_FSL](https://github.com/floodsung/LearningToCompare_FSL)
+- [https://github.com/lzrobots/LearningToCompare_ZSL](https://github.com/lzrobots/LearningToCompare_ZSL)
+
+Data:
+
+- AWA2 : [https://cvml.ist.ac.at/AwA2/](https://cvml.ist.ac.at/AwA2/)
+
+Websites:
