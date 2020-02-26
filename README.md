@@ -1,4 +1,4 @@
-![equation](http://latex.codecogs.com/gif.latex?$$f_φ(x_i), f_φ(x_j)$$)  
+
 ![\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}](https://latex.codecogs.com/svg.latex?x%3D%5Cfrac%7B-b%5Cpm%5Csqrt%7Bb%5E2-4ac%7D%7D%7B2a%7D)
 # Abstract
 
@@ -59,7 +59,7 @@ AWA2 dataset 참조 : [https://cvml.ist.ac.at/AwA2/](https://cvml.ist.ac.at/AwA2
 
     $$f_φ(x_i), f_φ(x_j)$$
 
-    $$f_φ : \text{Embedding module}\newline x_i, x_j : \text{support and query image}$$
+    ![equation](http://latex.codecogs.com/gif.latex?f_%CF%86%20:%20\text{Embedding%20module}\newline%20x_i,%20x_j%20:%20\text{support%20and%20query%20image})  
 
     우선적으로 모든 이미지를 각각 Embedding을 시켜준다.
 
