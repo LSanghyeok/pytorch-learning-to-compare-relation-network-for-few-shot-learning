@@ -76,6 +76,8 @@ AWA2 dataset 참조 : [https://cvml.ist.ac.at/AwA2/](https://cvml.ist.ac.at/AwA2
 3. Relation module
 
     $$g_\phi(C(f_φ(x_i),\ f_φ(x_j)))$$
+    ![equation](http://www.sciweavers.org/tex2img.php?eq=1%2Bsin%28mc%5E2%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=)
+
     ![Equation](<img src="http://www.sciweavers.org/tex2img.php?eq=%24%24g_%5Cphi%28C%28f_%CF%86%28x_i%29%2C%5C%20f_%CF%86%28x_j%29%29%29%24%24&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="$$g_\phi(C(f_φ(x_i),\ f_φ(x_j)))$$" width="150" height="21" />)
 
     Concat된 vector를 다시 NN모듈을 통하여 classify하여 최종 label을 결정한다.
