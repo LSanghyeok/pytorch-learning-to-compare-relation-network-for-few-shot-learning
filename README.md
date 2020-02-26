@@ -57,13 +57,13 @@ AWA2 dataset 참조 : [https://cvml.ist.ac.at/AwA2/](https://cvml.ist.ac.at/AwA2
 
     ![equ1](http://latex.codecogs.com/gif.latex?%24%24f_%5Cvarphi%20%28x_i%29%2C%20f_%5Cvarphi%28x_j%29%24%24)
 
-    $$f_φ : \text{Embedding module}\newline x_i, x_j : \text{support and query image}$$  
+    ![equ2](http://latex.codecogs.com/gif.latex?%24%24f%20%3A%20%5Ctext%7BEmbedding%20module%7D%5Cnewline%20x_i%2C%20x_j%20%3A%20%5Ctext%7Bsupport%20and%20query%20image%7D%24%24)
 
     우선적으로 모든 이미지를 각각 Embedding을 시켜준다.
 
 2. Concatenate
 
-    $$C(f_φ(x_i),\ f_φ(x_j))$$
+    ![equ3](http://latex.codecogs.com/gif.latex?%24%24C%28f_%5Cvarphi%20%28x_i%29%2C%5C%20f_%5Cvarphi%28x_j%29%29%24%24)
 
     Embedding 된 모든 vector를 concatenate 연산을 취하여 합쳐준다.
 
@@ -75,11 +75,8 @@ AWA2 dataset 참조 : [https://cvml.ist.ac.at/AwA2/](https://cvml.ist.ac.at/AwA2
 
 3. Relation module
 
-    $$g_\phi(C(f_φ(x_i),\ f_φ(x_j)))$$
-    ![equation](<img src="http://www.sciweavers.org/tex2img.php?eq=%24%24f_%CF%86%28x_i%29%2C%20f_%CF%86%28x_j%29%24%24&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="$$f_φ(x_i), f_φ(x_j)$$" width="85" height="21" />)
-
-    ![Equation](<img src="http://www.sciweavers.org/tex2img.php?eq=%24%24g_%5Cphi%28C%28f_%CF%86%28x_i%29%2C%5C%20f_%CF%86%28x_j%29%29%29%24%24&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="$$g_\phi(C(f_φ(x_i),\ f_φ(x_j)))$$" width="150" height="21" />)
-
+    ![equ4](http://latex.codecogs.com/gif.latex?%24%24g_%5Cphi%28C%28f_%5Cvarphi%28x_i%29%2C%5C%20f_%5Cvarphi%28x_j%29%29%29%24%24)
+    
     Concat된 vector를 다시 NN모듈을 통하여 classify하여 최종 label을 결정한다.
 
     여태까지의 과정을 다 합쳐서 나타낸것이 위 식으로, 말로 풀어 표현하자면, j번째 query이미지가 i번째 image의 label로 분류될 relation score를 나타낸 것이다.
@@ -98,7 +95,7 @@ AWA2 dataset 참조 : [https://cvml.ist.ac.at/AwA2/](https://cvml.ist.ac.at/AwA2
 
 +)Zero-shot learning
 
-$$g_\phi(C(f_{φ1}(x_i),\ f_{φ2}(x_j)))$$
+![equ5](http://latex.codecogs.com/gif.latex?%24%24g_%5Cphi%28C%28f_%7B%5Cvarphi1%7D%28x_i%29%2C%5C%20f_%7B%5Cvarphi2%7D%28x_j%29%29%29%24%24)
 
 기존의 few-shot learning과 거의 유사하나, support set의 data는 이제 image가 아닌 attribute를 나타낸 vector이므로 query set의 image를 embedding하는 network와 다른 network를 통하여 embedding을 진행한다. (attribute는 FC network 사용, 이미지는 CNN 사용)
 
